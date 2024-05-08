@@ -2,12 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./main.js"></script>
+    <nav class="navbar">
+      <div class="leftRow">
+        <a class="linkHome" href="/">
+          <img class="logo" src="./public/logo.png" />
+          Maomao manga store
+        </a>
+      </div>
+      <div class="rightRow">
+        <button class="button">Novità</button>
+        <button class="button">Catalogo</button>
+        <button class="button">Profilo</button>
+        <button class="button">Carrello</button>
+      </div>
+    </nav>
+    <div id="app">
+      <div class="manga-scroll">
+        <div class="manga-scroll-1">
+          <div class="manga-card">
+            <div class="manga-info"></div>
+            <img class="manga-cover"  />
+          </div>
+        </div>
+        <div class="manga-scroll-2">
+          <div class="manga-card">
+            <div class="manga-info"></div>
+            <img class="manga-cover"  />
+          </div>
+        </div>
+        <div class="manga-scroll-3">
+          <div class="manga-card">
+            <div class="manga-info"></div>
+            <img class="manga-cover"  />
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="wrapper">
+      <footer class="footer">
+        <p>© 2024 Maomao manga store</p>
+      </footer>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   </body>
 </html>
