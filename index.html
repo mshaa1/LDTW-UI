@@ -1,70 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="leftRow">
-        <a class="linkHome" href="/">
-          <img class="logo" src="./public/logo.png" />
-          Maomao manga store
-        </a>
-      </div>
-      <div class="rightRow">
-        <button class="button">Novità</button>
-        <button class="button">Catalogo</button>
-        <button class="button">Profilo</button>
-        <button class="button">Carrello</button>
-      </div>
-    </nav>
-    <div id="app">
-      <div class="manga-scroll">
-          <div class="manga-card">
-            <div class="manga-info">
-              <label class="info-label">Novità</label>
-              <label class="manga-name">I diari della speziale</label>
-              <label class="manga-author">Suichiro Yamamoto</label>
-              <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
-            </div>
-            <img class="manga-cover" src="./javascript.svg"  />
-          </div>
-          <div class="manga-card">
-            <div class="manga-info">
-              <label class="info-label"></label>
-              <label class="manga-name"></label>
-              <label class="manga-author"></label>
-              <label class="manga-description"></label>
-            </div>
-            <img class="manga-cover"  />
-          </div>
-          <div class="manga-card">
-            <div class="manga-info">
-              <label class="info-label"></label>
-              <label class="manga-name"></label>
-              <label class="manga-author"></label>
-              <label class="manga-description"></label>
-            </div>
-            <img class="manga-cover" />
-          </div>
-      </div>
-      <div class="spin-button">
-        <button class="selected"></button>
-        <button class="not-selected"></button>
-        <button class="not-selected"></button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="leftRow">
+      <a class="linkHome" href="/">
+        <img class="logo" src="./public/logo.png" />
+        Maomao manga store
+      </a>
     </div>
-    <div class="wrapper">
-      <footer class="footer">
-        <p>© 2024 Maomao manga store</p>
-      </footer>
+    <div class="rightRow">
+      <button class="button">Novità</button>
+      <button class="button">Catalogo</button>
+      <button class="button">Profilo</button>
+      <button class="button">Carrello</button>
     </div>
-    <script type="module" src="./src/main.ts"></script>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-  </body>
+  </nav>
+  <div id="app">
+    <div class="manga-scroll-outer">
+      <button class="scroll-button-left" id="scroll-back">&lt;</button>
+      <div class="manga-scroll" class="manga-scroll-transition">
+        <div class="manga-card" data-position="1">
+          <div class="manga-info">
+            <label class="info-label">Novità1</label>
+            <label class="manga-name">I diari della speziale</label>
+            <label class="manga-author">Suichiro Yamamoto</label>
+            <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
+          </div>
+          <img class="manga-cover" src="./public/assets/kusuriya1.jpg" />
+        </div>
+        <div class="manga-card" data-position="2">
+          <div class="manga-info">
+            <label class="info-label">Novità2</label>
+            <label class="manga-name">I diari della speziale</label>
+            <label class="manga-author">Suichiro Yamamoto</label>
+            <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
+          </div>
+          <img class="manga-cover" src="./public/assets/kusuriya1.jpg" />
+        </div>
+        <div class="manga-card" data-position="3">
+          <div class="manga-info">
+            <label class="info-label">Novità3</label>
+            <label class="manga-name">I diari della speziale</label>
+            <label class="manga-author">Suichiro Yamamoto</label>
+            <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
+          </div>
+          <img class="manga-cover" src="./public/assets/kusuriya1.jpg" />
+        </div>
+      </div>
+      <button class="scroll-button-right" id="scroll-forward">&gt;</button>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <footer class="footer">
+      <p>© 2024 Maomao manga store</p>
+    </footer>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</body>
+
 </html>
