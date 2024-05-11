@@ -20,6 +20,28 @@ const FlexSlider = {
 			// Get the manga scroll container
 			const mangaScroll = document.querySelector('.manga-scroll');
 
+			let touchStartX = 0;
+			let touchEndX = 0;
+		
+			// Detect the start of a touch
+			mangaScroll.addEventListener('touchstart', (event) => {
+			  touchStartX = event.changedTouches[0].screenX;
+			});
+		
+			// Detect the end of a touch
+			mangaScroll.addEventListener('touchend', (event) => {
+			  touchEndX = event.changedTouches[0].screenX;
+		
+			  // Determine the direction of the swipe
+			  if (touchEndX < touchStartX) {
+				// Swipe left, go to next
+				this.gotoNext();
+			  } else if (touchEndX > touchStartX) {
+				// Swipe right, go to previous
+				this.gotoPrev();
+			  }
+			});
+
 			// Stop the auto scroll when the user hovers over the container
 			mangaScroll.addEventListener('mouseover', () => {
 				clearInterval(autoScroll);
@@ -30,6 +52,10 @@ const FlexSlider = {
 				autoScroll = setInterval(() => {
 					this.gotoNext();
 				}, 6000); // Change this to the desired scroll interval in milliseconds
+			});
+
+			mangaScroll.addEventListener('touchstart', (event) => {
+				clearInterval(autoScroll);
 			});
 		});
 
