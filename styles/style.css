@@ -173,8 +173,6 @@ body {
   .manga-scroll {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 7rem;
   }
 
@@ -220,12 +218,10 @@ body {
   }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1050px) {
   .manga-scroll {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 7rem;
   }
 
@@ -272,12 +268,10 @@ body {
 
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) {
   .manga-scroll {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 4rem;
   }
 
@@ -322,12 +316,57 @@ body {
     height: 12.5rem;
   }
 
-  .spin-button {
+}
+
+@media(max-width:700px) {
+  .manga-scroll {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+
+  .manga-scroll-transition {
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .manga-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 5rem;
+    gap: 2rem;
+    flex-shrink: 0;
   }
 
+  .manga-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-label {
+    color: #00a2ff;
+  }
+
+  .manga-name {
+    font-size: 2.25rem;
+  }
+
+  .manga-author {
+    font-size: 0.75rem;
+    color: #5e5e5e;
+
+  }
+
+  .manga-description {
+    font-size: 0.55rem;
+    color: #5c5c5c;
+  }
+
+  .manga-cover {
+    width: 8.5rem;
+    height: 12.5rem;
+  }
+
+  .scroll-button-left, .scroll-button-right {
+    display: none;
+  }
 }
