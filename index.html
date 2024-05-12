@@ -23,51 +23,30 @@
     </div>
   </nav>
   <div id="app">
-    <div class="manga-scroll-outer">
-      <button class="scroll-button-left" id="scroll-back">&lt;</button>
-      <div class="manga-scroll" class="manga-scroll-transition">
-        <div class="manga-card" data-position="1">
-          <div class="manga-info">
-            <label class="info-label">Novità1</label>
-            <label class="manga-name">I diari della speziale</label>
-            <label class="manga-author">Suichiro Yamamoto</label>
-            <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
-          </div>
-          <img class="manga-cover" src="./public/assets/kusuriya1.jpg" />
+    <div id="slider-container-outer">
+      <div id="slider-container" class="slider-container-transition">
+        <div class="slider-item" data-position="1">
+          <img class="carousel-image" src="./public/assets/frieren-carousel.png" />
         </div>
-        <div class="manga-card" data-position="2">
-          <div class="manga-info">
-            <label class="info-label">Novità2</label>
-            <label class="manga-name">I diari della speziale</label>
-            <label class="manga-author">Suichiro Yamamoto</label>
-            <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
-          </div>
-          <img class="manga-cover" src="./public/assets/kusuriya1.jpg" />
+        <div class="slider-item" data-position="2">
+          <img class="carousel-image" src="./public/assets/kusuriya-carousel.png" />
         </div>
-        <div class="manga-card" data-position="3">
-          <div class="manga-info">
-            <label class="info-label">Novità3</label>
-            <label class="manga-name">I diari della speziale</label>
-            <label class="manga-author">Suichiro Yamamoto</label>
-            <label class="manga-description">Maomao underrated girl, best girl kusuriya sama i need you</label>
-          </div>
-          <img class="manga-cover" src="./public/assets/kusuriya1.jpg" />
+        <div class="slider-item" data-position="3">
+          <img class="carousel-image" src="./public/assets/yorha-carousel.png" />
         </div>
       </div>
-      <button class="scroll-button-right" id="scroll-forward">&gt;</button>
     </div>
   </div>
-
-  <div class="wrapper">
-    <footer class="footer">
-      <p>© 2024 Maomao manga store</p>
-    </footer>
-  </div>
-  <script type="module" src="./src/main.js"></script>
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <div class="wrapper">
+      <footer class="footer">
+        <p>© 2024 Maomao manga store</p>
+      </footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 </body>
 
 </html>
