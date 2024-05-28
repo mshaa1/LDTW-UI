@@ -10,8 +10,11 @@
 }
 
 #app {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 html,
 body {
@@ -88,6 +91,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
+  margin-top: 5rem;
   border-top: 1.5px solid black;
   border-top-color: rgb(0, 0, 0, 0.2);
 }
@@ -116,4 +120,45 @@ body {
 
 .carousel-image {
   width: 85%;
+}
+
+.manga-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+  gap: 10rem;
+}
+
+.last-releases-label, .from-manga-to-anime-label {
+  font-size: 2.2rem;
+}
+
+.last-releases, .from-manga-to-anime {
+  display: flex;
+  flex-direction: column;
+}
+
+.releases-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem;
+  justify-content: space-around;
+}
+
+.release {
+  max-width: 15rem;
+}
+
+.release-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.release-title {
+  font-size: 1rem;
+}
+
+.release-image {
+  width: 15rem;
+  height: 320px;
 }
