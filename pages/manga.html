@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <link rel="stylesheet" href="/styles/manga-style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="leftRow">
+      <a class="linkHome" href="/">
+        <img class="logo" src="/logo.png" />
+        Maomao manga store
+      </a>
+    </div>
+    <div class="rightRow">
+      <button class="button">Novità</button>
+      <button class="button">Catalogo</button>
+      <button class="button">Profilo</button>
+      <button class="button">Carrello</button>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="upper-row-container">
+      <div class="left-side">
+        <img class="manga-image" src="/assets/frieren1.png" />
+        <div class="other-details-container">
+          <label class="other-details">Altri dettagli</label>
+          <label class="author-label">Autore: <label class="manga-author">Tsukasa Abe</label></label>
+          <label class="publisher-label">Editore: <label class="manga-publisher">JPop</label></label>
+          <label class="category-label">Categoria: <label class="manga-author">Seinen</label></label>
+          <label class="volume-label">Volume: <label class="manga-volume">1</label></label>
+          <label class="isbn-label">ISBN: <label class="manga-isbn">9788834902389</label></label>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="manga-info">
+          <label class="manga-title">Frieren - Oltre la fine del viaggio - N.1</label>
+          <label class="manga-price">€ 6,90</label>
+          <label class="manga-description">Frieren è una strega che ha vissuto per secoli. Dopo aver perso i suoi compagni di viaggio e aver visto il mondo cambiare, decide di intraprendere un viaggio per riscoprire il significato della vita.</label>
+        </div>
+        <div class="add-to-cart">
+          <div class="spinner-quantity">
+            <button class="quantity-button-left">-</button>
+            <div class="spinner">
+              <label class="quantity">1</label>
+            </div>
+            <button class="quantity-button-right">+</button>
+          </div>
+          <button class="add-to-cart-button">Aggiungi al carrello</button>
+        </div>
+      </div>
+    </div>
+    <div class="lower-row-container">
+      <label class="other-volumes">Prodotti correlati</label>
+      <div class="related-products">
+        <div class="related-product">
+          <img class="related-product-image" src="/assets/frieren1.png" />
+          <label class="related-product-title">Frieren - Oltre la fine del viaggio - N.2</label>
+          <label class="related-product-price">€ 6,90</label>
+        </div>
+        <div class="related-product">
+          <img class="related-product-image" src="/assets/frieren1.png" />
+          <label class="related-product-title">Frieren - Oltre la fine del viaggio - N.3</label>
+          <label class="related-product-price">€ 6,90</label>
+        </div>
+        <div class="related-product">
+          <img class="related-product-image" src="/assets/frieren1.png" />
+          <label class="related-product-title">Frieren - Oltre la fine del viaggio - N.4</label>
+          <label class="related-product-price">€ 6,90</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <footer class="footer">
+      <p>© 2024 Maomao manga store</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/manga.js"></script>
+</body>
+
+</html>

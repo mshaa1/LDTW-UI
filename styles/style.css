@@ -161,4 +161,14 @@ body {
 .release-image {
   width: 15rem;
   height: 320px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.release-image:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.go-to-manga{
+  all: unset;
+  cursor: pointer;
 }
