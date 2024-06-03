@@ -122,6 +122,7 @@
   
   .manga-title {
     font-size: 2.6rem;
+    text-shadow: 0.5px 0 #000, -0.5px 0 #000, 0 0.5px #000, 0 -0.5px #000;
   }
   
   .manga-price {
