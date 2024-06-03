@@ -97,12 +97,14 @@
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .upper-row-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 5rem;
     margin-top: 6rem;
   }
@@ -110,7 +112,6 @@
   .left-side {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   
   .manga-info {
@@ -204,20 +205,33 @@
     padding: 0.43rem 1.2rem;
   }
   
-  .center-row-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .other-details-container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
   }
   
   .other-details {
     font-size: 2rem;
+    text-shadow: 0.5px 0 #000, -0.5px 0 #000, 0 0.5px #000, 0 -0.5px #000;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    gap: 0.3rem;
+  }
+
+  .info-label {
+    text-shadow: 0.5px 0 #000, -0.5px 0 #000, 0 0.5px #000, 0 -0.5px #000;
+  }
+
+  .info-manga-label {
+    text-shadow: none;
   }
   
   .lower-row-container {
@@ -230,6 +244,8 @@
   .related-products {
     display: flex;
     flex-direction: row;
+    gap: 7.2rem;
+    flex-wrap: wrap;
     margin: 1.5rem;
     justify-content: space-evenly;
   }
@@ -246,6 +262,11 @@
     flex-direction: column;
     max-width: 15rem;
     gap: 0.4rem;
+  }
+
+  .other-volumes-label {
+    font-size: 2rem;
+    text-shadow: 0.5px 0 #000, -0.5px 0 #000, 0 0.5px #000, 0 -0.5px #000;
   }
 
   .related-product-image {
