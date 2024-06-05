@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="stylesheet" href="/styles/catalogue-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="app">
+        <nav class="navbar">
+            <div class="leftRow">
+                <a class="linkHome" href="/">
+                    <img class="logo" src="/logo.png" />
+                    Maomao manga store
+                </a>
+            </div>
+            <div class="rightRow">
+                <button class="button">Novità</button>
+                <button class="button">Catalogo</button>
+                <button class="button">Profilo</button>
+                <button class="button">Carrello</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="filters">
+                <label class="filter-by">Filtra per</label>
+                <div class="categories">
+                    <label class="filter-by-label">Categoria</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="shonen" />
+                        Shonen</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="slice of life" /> Slice
+                        of life</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="action" />
+                        Action</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="fantasy" />
+                        Fantasy</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="isekai" />
+                        Isekai</label>
+                </div>
+                <div class="publishers">
+                    <label class="filter-by-label">Editore</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="j-pop" /> J-Pop</label>
+                    <label class="filter-label"><input class="filter-checkbox" type="checkbox" name="star comics" /> Star
+                        Comics</label>
+                </div>
+                <div class="release-date">
+                    <label class="filter-by-label">Data uscita</label>
+                    <label class="filter-button-label">Più recente</label>
+                    <label class="filter-button-label">Meno recente</label>
+                </div>
+                <div class="price">
+                    <label class="filter-by-label">Prezzo</label>
+                    <label class="filter-button-label">Crescente</label>
+                    <label class="filter-button-label">Decrescente</label>
+                </div>
+            </div>
+            <div class="mangas-list">
+                <div class="upper-row">
+                    <label class="manga-label">Manga</label>
+                    <input class="search-bar" type="search" placeholder="Cerca" />
+                </div>
+                <div class="lower-row">
+                    <div class="mangas">
+                        <div class="release">
+                            <a class="go-to-manga" href="/pages/manga.html">
+                                <img class="release-image" src="/assets/darksouls01.png" />
+                                <div class="release-info">
+                                    <label class="release-title">Dark Souls N.01 - Preorder</label>
+                                    <label class="release-price">€ 7,50</label>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="release">
+                            <a class="go-to-manga" href="/pages/manga.html">
+                                <img class="release-image" src="./public/assets/darksouls01.png" />
+                                <div class="release-info">
+                                    <label class="release-title">Dark Souls N.01 - Preorder</label>
+                                    <label class="release-price">€ 7,50</label>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="release">
+                            <a class="go-to-manga" href="/pages/manga.html">
+                                <img class="release-image" src="./public/assets/darksouls01.png" />
+                                <div class="release-info">
+                                    <label class="release-title">Dark Souls N.01 - Preorder</label>
+                                    <label class="release-price">€ 7,50</label>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="release">
+                            <a class="go-to-manga" href="/pages/manga.html">
+                                <img class="release-image" src="./public/assets/darksouls01.png" />
+                                <div class="release-info">
+                                    <label class="release-title">Dark Souls N.01 - Preorder</label>
+                                    <label class="release-price">€ 7,50</label>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <footer class="footer">
+                <p>© 2024 Maomao manga store</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
