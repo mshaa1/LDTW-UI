@@ -98,7 +98,8 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
@@ -155,11 +156,20 @@ html, body {
     gap: 0.3rem;
 }
 
+.line {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-color: rgb(0, 0, 0, 0.2);
+
+}
+
 .mangas-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 3.2rem;
+    flex-basis: 52.7%;
 }
 
 .upper-row {
@@ -168,6 +178,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .manga-label {
@@ -187,7 +198,6 @@ html, body {
 .lower-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
     flex-wrap: wrap;
 }
 
@@ -195,8 +205,7 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    max-width: 52.7rem;
+    gap: 5rem;
 }
 
 .release {
