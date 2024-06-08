@@ -170,13 +170,13 @@ html, body {
 
 .info {
     display: grid;
-    grid-template-columns: 2.3fr 1fr 1fr 1fr;
+    grid-template-columns: 2.3fr 1fr 1fr 1fr 0.5fr;
     gap: 3rem;
 }
 
 .product {
     display: grid;
-    grid-template-columns: 2.3fr 1fr 1fr 1fr;
+    grid-template-columns: 2.3fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
     gap: 3rem;
     margin: 1rem 0rem 1rem 0rem;
@@ -264,4 +264,19 @@ html, body {
 
 .checkout-button:hover {
     background-color: #7eba86;
+}
+
+.remove-from-cart-button {
+    all: unset;
+    cursor: pointer;
+    user-select: none;
+}
+
+.remove-image {
+    width: 1.6rem;
+    transition: filter 0.3s ease-in-out;
+}
+
+.remove-image:hover {
+    filter: invert(12%) sepia(96%) saturate(7476%) hue-rotate(358deg) brightness(100%) contrast(113%);
 }
